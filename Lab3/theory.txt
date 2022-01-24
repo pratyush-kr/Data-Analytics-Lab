@@ -1,0 +1,3 @@
+Questions:
+1. Write an R-Script to analyze the given number is positive using simple if statements
+2. Write an R-Script to check whether the given number is positive

@@ -1,0 +1,11 @@
+radius = as.numeric(readline("Radius: "));
+print(3.14*radius**2);
+len = as.numeric(readline("Length: "));
+bre = as.numeric(readline("Breadth: "));
+print(len*bre);
+a = as.numeric(readline("a: "));
+b = as.numeric(readline("b: "));
+c = as.numeric(readline("c: "));
+s = (a+b+c)/2;
+area = sqrt(s*(s-a)*(s-b)*(s-c));
+print(area);

@@ -1,9 +1,5 @@
-sum = function(N) {
-    s = 0;
-    for(i in 1:N) {
-        s = s + i*(i+1)/2;
-    }
-    return (s);
-}
+#init a vector of 5 elements and find the squareroot
 
-print(paste("sum =", sum(10)));
+vec = seq.int(5, 10);
+vec = sqrt(vec);
+print(vec)

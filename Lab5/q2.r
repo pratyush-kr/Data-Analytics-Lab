@@ -1,27 +1,18 @@
-cube = function() {
-    a = as.numeric(readline("a: "));
-    print(paste("volume of cube of side", a, "=", a**3));
+#init two vectors and check if they are equal
+
+vec1 = seq.int(3, 12);
+vec2 = seq.int(4, 9);
+print(setequal(vec1, vec2));
+vec2 = seq.int(4, 12);
+isEqual = TRUE;
+for(i in seq_along(vec1)) {
+    if(vec1[i] != vec2[i]) {
+        print("Not Equal");
+        isEqual = FALSE;
+        break;
+    }
 }
 
-cubeoid = function() {
-    l = as.numeric(readline("l: "));
-    b = as.numeric(readline("b: "));
-    h = as.numeric(readline("h: "));
-    print(paste("volume of cuboid of side", l, b, h, "=", l*b*h));
-}
-
-cylinder = function() {
-    r = as.numeric(readline("radius: "));
-    h = as.numeric(readline("height: "));
-    print(paste("volume of cylinder of radius", r, "height", h, "=", 3.14*r**2*h));
-}
-
-while(TRUE) {
-    command = readline("command: ");
-    switch(command,
-        "1" = cube(),
-        "2" = cubeoid(),
-        "3" = cylinder(),
-        "4" = break
-    )
-}
+if(isEqual == TRUE) {
+    print("Equal");
+} 
